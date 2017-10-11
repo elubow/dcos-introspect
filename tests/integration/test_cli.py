@@ -3,13 +3,13 @@ from common import exec_command
 
 def test_help():
     returncode, stdout, stderr = exec_command(
-        ['dcos-helloworld', 'helloworld', '--help'])
+        ['dcos-introspect', 'introspect', '--help'])
 
     assert returncode == 0
-    assert stdout == b"""DCOS HelloWorld Example Subcommand
+    assert stdout == b"""DCOS Introspect Example Subcommand
 
 Usage:
-    dcos helloworld --info
+    dcos introspect --info
 
 Options:
     --help           Show this screen

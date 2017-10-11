@@ -1,7 +1,7 @@
 # This image runs the dcos-cli test suite.
 
 FROM ubuntu:15.04
-MAINTAINER support@mesosphere.com
+MAINTAINER eric@lubow.org
 
 RUN apt-get update && apt-get install -y \
   make \
@@ -14,8 +14,8 @@ RUN apt-get update && apt-get install -y \
 && pip install pip --upgrade \
 && pip install pyinstaller
 
-ADD . /dcos-helloworld
-WORKDIR /dcos-helloworld
+ADD . /dcos-introspect
+WORKDIR /dcos-introspect
 RUN make clean env packages
 
 RUN make binary

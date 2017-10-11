@@ -1,8 +1,5 @@
-DCOS HelloWorld Subcommand
+DCOS Introspct Subcommand
 ==========================
-
-.. image:: https://secure.travis-ci.org/mesosphere/dcos-helloworld.svg
-    :target: http://travis-ci.org/mesosphere/dcos-helloworld
 
 Basic DCOS subcommand
 
@@ -10,13 +7,13 @@ Setup
 -----
 #. Run from source or run from binary. If you would like to run from a binary, continue to 'Binary' section below.
 #. Make sure you meet requirements for installing packages_
-#. Clone git repo for the dcos helloworld cli::
+#. Clone git repo for the dcos introspect cli::
 
-    git clone git@github.com:mesosphere/dcos-helloworld.git
+    git clone git@github.com:elubow/dcos-introspect.git
 
 #. Change directory to the repo directory::
 
-    cd dcos-helloworld
+    cd dcos-introspect
 
 #. Make sure that you have virtualenv installed. If not type::
 
@@ -29,14 +26,14 @@ Setup
 Configure Environment and Run
 -----------------------------
 
-#. :code:`source` the setup file to add the :code:`dcos-helloworld` command line interface to your
+#. :code:`source` the setup file to add the :code:`dcos-introspect` command line interface to your
    :code:`PATH`::
 
     source env/bin/activate
 
-#. Get started by calling the DCOS HelloWorld CLI's help::
+#. Get started by calling the DCOS Introspect CLI's help::
 
-    dcos-helloworld help
+    dcos-introspect help
 
 
 Binary:
@@ -56,7 +53,7 @@ Create Binary:
 Run Binary:
 ###########
 
-#. Update `PATH` to have the dcos-helloworld binary. The created binary is is in folder `dist`::
+#. Update `PATH` to have the dcos-introspect binary. The created binary is is in folder `dist`::
 
    PATH=/path/to/binary:$PATH
 

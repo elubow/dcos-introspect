@@ -1,22 +1,22 @@
-"""DCOS HelloWorld Example Subcommand
+"""DCOS Introspect Example Subcommand
 
 Usage:
-    dcos helloworld --info
+    dcos introspect --info
 
 Options:
     --help           Show this screen
     --version        Show version
 """
 import docopt
-from dcos_helloworld import constants
+from dcos_introspect import constants
 
 
 def main():
     args = docopt.docopt(
         __doc__,
-        version='dcos-helloworld version {}'.format(constants.version))
+        version='dcos-introspect version {}'.format(constants.version))
 
-    if args['helloworld'] and args['--info']:
+    if args['introspect'] and args['--info']:
         print('Example of a DCOS subcommand')
     else:
         print(__doc__)
