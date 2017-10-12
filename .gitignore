@@ -3,6 +3,7 @@ build/
 dist/
 *.egg-info/
 *.pyc
+*.sw[op]
 
 .tox/
 .coverage
