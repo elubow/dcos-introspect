@@ -1,2 +1,4 @@
 tox==2.2.1
 wheel==0.24.0
+dcoscli==0.5.1
+dcos==0.5.5
